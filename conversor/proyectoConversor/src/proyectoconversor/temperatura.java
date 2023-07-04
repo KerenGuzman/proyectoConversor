@@ -13,9 +13,7 @@ public class temperatura extends VentanaBase{
     JTextField areaTexto;
     JComboBox combobox1;
     JLabel resultadoLabel;
-    
-    
-    
+
     public temperatura(){
         super("Ingrese dato a convertir: ", new int[]{120, 50, 300, 20}, new int[]{110,200, 110, 30}, new int[]{260,200, 110, 30});
         
