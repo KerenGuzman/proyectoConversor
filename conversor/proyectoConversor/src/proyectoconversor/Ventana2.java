@@ -33,9 +33,7 @@ public class Ventana2 extends VentanaBase{
     public void actionPerformed(ActionEvent e) {
         //ValidarNumero validar = new ValidarNumero();
         if(e.getSource() == aceptar){
-            //super.actionPerformed(e);
             String texto1 = areaTexto.getText().trim();
-            //validar.ValidarNumero(texto1);
             //verificar si esta vacio
             if (texto1.isEmpty()) {
                 JOptionPane.showMessageDialog(rootPane, "Ingrese Dato");

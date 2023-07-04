@@ -3,7 +3,6 @@ package proyectoconversor;
 
 import java.awt.event.ActionEvent;
 import javax.swing.JComboBox;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
@@ -12,7 +11,6 @@ public class temperatura extends VentanaBase{
     String[] opciones = {"Seleccione...", "Kelvin", "Celsius", "Fahrenheit"};
     JTextField areaTexto;
     JComboBox combobox1;
-    JLabel resultadoLabel;
 
     public temperatura(){
         super("Ingrese dato a convertir: ", new int[]{120, 50, 300, 20}, new int[]{110,200, 110, 30}, new int[]{260,200, 110, 30});

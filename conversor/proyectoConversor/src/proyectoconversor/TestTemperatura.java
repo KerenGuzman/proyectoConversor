@@ -3,10 +3,6 @@ package proyectoconversor;
 
 import java.awt.Color;
 
-/**
- *
- * @author User
- */
 public class TestTemperatura implements TestConversor<temperatura>{
     public void TestTemperatura(){
        temperatura visual = new temperatura();

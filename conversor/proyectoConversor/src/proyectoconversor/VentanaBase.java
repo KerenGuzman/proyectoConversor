@@ -9,10 +9,6 @@ import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-/**
- *
- * @author User
- */
 public class VentanaBase extends JFrame implements ActionListener{
     protected JComboBox combobox;
     protected JComboBox combobox1;

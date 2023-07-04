@@ -28,11 +28,9 @@ public class Conversor extends VentanaBase{
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == aceptar){   //indica que el evento esta en e y se usa getSource que recupera el evento que se guardo en e
-            //super.actionPerformed(e);
             texto = combobox.getSelectedItem().toString();
             if(texto.equals(opciones[0])){
                 segunda.segundaVista();
-                //menu.ConversorMonedaMenu();
                 dispose();
             }else if(texto.equals(opciones[1])){
                 temp.TestTemperatura();
