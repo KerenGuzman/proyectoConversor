@@ -9,3 +9,4 @@ se tuvo en cuenta el uso de herencias, polimorfismo, clases abstractas e interfa
 
 Se realizaron diferentes ventanas con distintos mensajes para que el manejo del programa sea sencillo para los usuarios:
 
+s
