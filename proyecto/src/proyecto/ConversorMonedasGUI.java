@@ -13,14 +13,14 @@ public class ConversorMonedasGUI extends ConversorAluraBase {
 
 
     public ConversorMonedasGUI() {
-        super("Escoja una opción:", new int[]{110, 50, 300, 20}, new int[]{70, 150, 110, 30},
-                new int[]{220, 150, 110, 30});
+        super("Escoja una opción:", new int[]{100, 50, 300, 20}, new int[]{60, 150, 110, 30},
+                new int[]{210, 150, 110, 30});
     }
 
     public void initGUI() {
         
         comboBox = new JComboBox(opciones);
-        comboBox.setBounds(50, 90, 300, 25);
+        comboBox.setBounds(40, 90, 300, 25);
         comboBox.setFont(new Font("Courier New", Font.CENTER_BASELINE, 15));
         add(comboBox);
         comboBox.addActionListener(this);

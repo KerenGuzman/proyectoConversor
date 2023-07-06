@@ -29,7 +29,7 @@ public class ConversorMonedaGUIVista2 extends ConversorAluraBase{
         add(comboBox);
         comboBox.addActionListener(this);
 
-        setBounds(100, 100, 400, 300);
+        setBounds(100, 100, 420, 300);
         getContentPane().setBackground(Color.decode("#252850"));
 
         setVisible(true);
