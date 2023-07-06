@@ -46,26 +46,25 @@ public class ConversorTemperaturaGUI extends ConversorAluraBase{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == botonAceptar) {
-            CalculoConversorTemperatura calculo = new CalculoConversorTemperatura();
-            if(e.getSource() == botonAceptar){
-               String texto1 = input.getText().trim();
-               if (texto1.isEmpty()) {
-                   JOptionPane.showMessageDialog(rootPane, "Ingrese Dato");
+        CalculoConversorTemperatura calculo = new CalculoConversorTemperatura();
+        if(e.getSource() == botonAceptar){
+           String texto1 = input.getText().trim();
+           if (texto1.isEmpty()) {
+               JOptionPane.showMessageDialog(rootPane, "Ingrese Dato");
+               input.requestFocus();
+           }else if(!texto1.isEmpty()){
+               if(!continuar.validarNumeros(input.getText().trim())){
+                   JOptionPane.showMessageDialog(rootPane, "Solo Numeros");
+                   input.setText("");
                    input.requestFocus();
-               }else if(!texto1.isEmpty()){
-                   if(!continuar.validarNumeros(input.getText().trim())){
-                       JOptionPane.showMessageDialog(rootPane, "Solo Numeros");
-                       input.setText("");
-                       input.requestFocus();
-                   }else if(continuar.validarNumeros(input.getText().trim())){
-                       String texto = comboBox.getSelectedItem().toString();
-                       String texto2 = comboBox1.getSelectedItem().toString();
-                       float dato = Float.parseFloat(input.getText());
-                       calculo.CalculoConversorTemperatura(texto, texto2, dato);
-                   }
+               }else if(continuar.validarNumeros(input.getText().trim())){
+                   String texto = comboBox.getSelectedItem().toString();
+                   String texto2 = comboBox1.getSelectedItem().toString();
+                   float dato = Float.parseFloat(input.getText());
+                   calculo.CalculoConversorTemperatura(texto, texto2, dato);
                }
-           } 
+           }
+           
         }else if (e.getSource() == botonCancelar) {
                 System.exit(0);
         }

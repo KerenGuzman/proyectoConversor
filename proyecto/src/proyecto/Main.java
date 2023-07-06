@@ -1,13 +1,9 @@
 
 package proyecto;
 
-import javax.swing.SwingUtilities;
-
 public class Main {
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            ConversorMonedasGUI conversorGUI = new ConversorMonedasGUI();
-            conversorGUI.initGUI();
-        });
+        ConversorMonedasGUI conversorGUI = new ConversorMonedasGUI();
+        conversorGUI.initGUI();
     }
 }
