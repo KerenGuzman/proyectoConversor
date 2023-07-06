@@ -3,10 +3,6 @@ package proyecto;
 
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author User
- */
 public class CalculoConversorTemperatura{
     private float kelvin;
     private float celsius;

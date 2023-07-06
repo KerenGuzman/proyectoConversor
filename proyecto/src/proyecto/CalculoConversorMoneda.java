@@ -3,10 +3,6 @@ package proyecto;
 
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author User
- */
 public class CalculoConversorMoneda {
     private float dolar = 4168f;
     private float euro = 4553.24f;

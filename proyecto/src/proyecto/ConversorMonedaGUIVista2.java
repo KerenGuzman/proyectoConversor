@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package proyecto;
 
 import java.awt.Color;
@@ -11,10 +8,7 @@ import javax.swing.JComboBox;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
-/**
- *
- * @author User
- */
+
 public class ConversorMonedaGUIVista2 extends ConversorAluraBase{
     
     public ConversorMonedaGUIVista2(){
@@ -49,21 +43,16 @@ public class ConversorMonedaGUIVista2 extends ConversorAluraBase{
         continuar continuar = new continuar();
         if (e.getSource() == botonAceptar) {
              String texto = input.getText().trim();
-            //verificar si esta vacio
             if (texto.isEmpty()) {
                 JOptionPane.showMessageDialog(rootPane, "Ingrese Dato");
                 input.requestFocus();
             }else if(!texto.isEmpty()){
-                //Si ValidadNumero es false
                 if(!continuar.validarNumeros(input.getText().trim())){
                     JOptionPane.showMessageDialog(rootPane, "Solo Numeros");
-                    //borrar texto
                     input.setText("");
-                    //poner cursor
                     input.requestFocus();
                 }else if(continuar.validarNumeros(input.getText().trim())){
                     texto = comboBox.getSelectedItem().toString();
-                    //convertir a float y capturar con getText
                     float dato = Float.parseFloat(input.getText());
                     calculo.CalculoConversorMoneda(texto, dato);
                     continuar.initGUI();

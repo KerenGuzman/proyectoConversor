@@ -8,10 +8,6 @@ import javax.swing.JComboBox;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
-/**
- *
- * @author User
- */
 public class ConversorTemperaturaGUI extends ConversorAluraBase{
     public ConversorTemperaturaGUI(){
         
@@ -67,7 +63,6 @@ public class ConversorTemperaturaGUI extends ConversorAluraBase{
                     String texto2 = comboBox1.getSelectedItem().toString();
                     float dato = Float.parseFloat(input.getText());
                     calculo.CalculoConversorTemperatura(texto, texto2, dato);
-                    //dispose();
                 }
             }
         } else if (e.getSource() == botonCancelar) {

@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package proyecto;
 
 import java.awt.Color;
@@ -38,7 +35,7 @@ public class ConversorMonedasGUI extends ConversorAluraBase {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if(e.getSource() == botonAceptar){   //indica que el evento esta en e y se usa getSource que recupera el evento que se guardo en e
+        if(e.getSource() == botonAceptar){   
             String texto = comboBox.getSelectedItem().toString();
             ConversorMonedaGUIVista2 conversor = new ConversorMonedaGUIVista2();
             ConversorTemperaturaGUI conversorTemperatura = new ConversorTemperaturaGUI();
@@ -49,7 +46,7 @@ public class ConversorMonedasGUI extends ConversorAluraBase {
                 conversorTemperatura.initGUI();
             }  
         }else if(e.getSource() == botonCancelar){
-            System.exit(0); //Para cerrar la interfaz grafica
+            System.exit(0); 
         }
     }
 }
