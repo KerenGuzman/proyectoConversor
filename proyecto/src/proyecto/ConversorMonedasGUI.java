@@ -44,6 +44,7 @@ public class ConversorMonedasGUI extends ConversorAluraBase {
                 dispose();
             }else if(texto.equals(opciones[1])){
                 conversorTemperatura.initGUI();
+                dispose();
             }  
         }else if(e.getSource() == botonCancelar){
             System.exit(0); 
